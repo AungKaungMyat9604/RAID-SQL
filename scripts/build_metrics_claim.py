@@ -82,11 +82,27 @@ def main(argv: list[str] | None = None) -> int:
         "token_summary": token_summary,
     }
 
+    # Preserve EM fields if evaluate_em.py already wrote them.
+    em_path = out_dir / "em_metrics.json"
+    if em_path.is_file():
+        em = json.loads(em_path.read_text(encoding="utf-8"))
+        if em.get("exact_match") is not None:
+            claim["exact_match"] = em["exact_match"]
+            claim["exact_match_correct"] = em.get("em_correct")
+            claim["exact_match_pct"] = em.get("exact_match_pct")
+
     out_path = out_dir / "metrics_claim.json"
     out_path.write_text(json.dumps(claim, indent=2) + "\n", encoding="utf-8")
+    em_msg = ""
+    if "exact_match_pct" in claim:
+        em_msg = (
+            f"\n  EM={claim.get('exact_match_correct')}/{n} "
+            f"({claim['exact_match_pct']}%)"
+        )
     print(
         f"Wrote {out_path}\n"
         f"  official EX={official_correct}/{n} ({100 * official_correct / n:.2f}%)"
+        f"{em_msg}"
     )
     return 0
 

@@ -9,7 +9,8 @@ RAID-SQL extends DIN-style decomposed prompting with structure-aware retrieval o
 | Metric | Value |
 | --- | --- |
 | Official Spider-test EX | **87.38%** (1876 / 2147) |
-| DIN-SQL published baseline | **85.3%** (GPT-4) |
+| Spider exact set match (EM) | **62.55%** (1343 / 2147) |
+| DIN-SQL published baseline | **85.3%** EX / **60%** EM (GPT-4) |
 | Mean tokens / query | ~11,300 input + ~477 output |
 | Mean LLM calls / query | ~8.85 |
 | Approximate API cost | ~$9.81 total (~$0.0046 / query) |
@@ -32,7 +33,9 @@ Question + Schema
 
 ```text
 raid_sql/          # pipeline, prompts, retrieval, metrics, Spider I/O
-scripts/           # index build, test/dev runners, EX scoring, fail analysis
+scripts/           # index build, test/dev runners, EX/EM scoring, fail analysis
+third_party/
+  spider_eval/     # vendored Spider EM scripts (Yu et al., 2018)
 outputs/
   test_raid_v2_values/   # locked fair evaluation package
 config.py
@@ -72,8 +75,11 @@ Offline inspection (no API calls):
 ```bash
 python scripts/report_run.py outputs/test_raid_v2_values/summary.json
 python scripts/build_metrics_claim.py outputs/test_raid_v2_values
+python scripts/evaluate_em.py outputs/test_raid_v2_values --update-claim
 python scripts/analyze_ex_fails.py outputs/test_raid_v2_values --scoring strict --no-baseline
 ```
+
+`evaluate_em.py` writes `em_metrics.json` (Spider exact set match) and can merge EM into `metrics_claim.json`.
 
 Rebuild the embedding index (requires embedding credentials):
 

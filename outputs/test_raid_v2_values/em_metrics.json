@@ -1,0 +1,38 @@
+{
+  "metric": "spider_exact_set_match",
+  "split": "test",
+  "n": 2147,
+  "em_correct": 1343,
+  "exact_match": 0.6255239869585468,
+  "exact_match_pct": 62.55,
+  "gold_parse_errors": 0,
+  "pred_parse_errors": 106,
+  "by_hardness": {
+    "easy": {
+      "count": 470,
+      "exact": 394,
+      "rate": 0.8382978723404255
+    },
+    "medium": {
+      "count": 857,
+      "exact": 558,
+      "rate": 0.6511085180863477
+    },
+    "hard": {
+      "count": 463,
+      "exact": 275,
+      "rate": 0.593952483801296
+    },
+    "extra": {
+      "count": 357,
+      "exact": 116,
+      "rate": 0.32492997198879553
+    },
+    "all": {
+      "count": 2147,
+      "exact": 1343,
+      "rate": 0.6255239869585468
+    }
+  },
+  "source": "third_party/spider_eval (taoyds/spider evaluation.py exact set match; values ignored per Spider EM)"
+}

@@ -23,6 +23,8 @@
 
 `execution_match()` in the spider data module uses **Spider official EX**: result rows are compared as multisets, and **SELECT column order within a row is ignored**. Use `execution_match_strict()` only for legacy debugging. Rescore an existing run with the **prediction rescorer** component after changing EX logic.
 
+**Exact set match (EM)** is secondary. Run `python scripts/evaluate_em.py outputs/test_raid_v2_values` to score the locked `predicted_sql.txt` / `gold.sql` pair with the vendored Spider evaluator (`third_party/spider_eval/`). EM ignores literal values (Spider default) and writes `em_metrics.json`.
+
 Run the **fail analyser** on the **locked evaluation package** (Spider test split).
 
 Report semantic fail kinds only in write-ups (271 residual fails).
