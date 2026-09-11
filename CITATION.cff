@@ -8,8 +8,8 @@ type: software
 license: MIT
 version: "1.0.0"
 date-released: "2026-08-29"
-url: "https://github.com/YOUR_USERNAME/RAID-SQL"
-repository-code: "https://github.com/YOUR_USERNAME/RAID-SQL"
+url: "https://github.com/AungKaungMyat9604/RAID-SQL"
+repository-code: "https://github.com/AungKaungMyat9604/RAID-SQL"
 abstract: >
   RAID-SQL extends DIN-style Text-to-SQL with structure-aware retrieval,
   database-value grounding, execution-guided repair, and self-consistency

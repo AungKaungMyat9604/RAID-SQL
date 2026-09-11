@@ -91,14 +91,12 @@ python scripts/run_test.py
 
 ## Citation
 
-After you publish this repository, replace `YOUR_USERNAME` below (and in `CITATION.cff`) with your GitHub username.
-
 ```bibtex
 @software{myat2026raidsql,
   author = {Myat, Aung Kaung},
   title  = {{RAID-SQL}: Retrieval-Augmented Decomposed Text-to-{SQL}},
   year   = {2026},
-  url    = {https://github.com/YOUR_USERNAME/RAID-SQL},
+  url    = {https://github.com/AungKaungMyat9604/RAID-SQL},
   note   = {Locked Spider-test official EX 87.38\% (1876/2147)}
 }
 ```
