@@ -1,0 +1,50 @@
+{
+  "schema_link": {
+    "sum_cost_usd": 0.9752328999999991,
+    "sum_est_cost_usd": 3.7114047000000006,
+    "mean_cost_usd": 0.00045423050768514205,
+    "count": 2147
+  },
+  "classify": {
+    "sum_cost_usd": 0.7848761000000007,
+    "sum_est_cost_usd": 3.679931999999992,
+    "mean_cost_usd": 0.0003655687470889613,
+    "count": 2147
+  },
+  "retrieve": {
+    "sum_cost_usd": 0.012764399999999997,
+    "sum_est_cost_usd": 0.012764399999999997,
+    "mean_cost_usd": 5.786219401631913e-06,
+    "count": 2206
+  },
+  "generate": {
+    "sum_cost_usd": 1.4228293000000007,
+    "sum_est_cost_usd": 4.0964109,
+    "mean_cost_usd": 0.0006627057755006986,
+    "count": 2147
+  },
+  "text_debug": {
+    "sum_cost_usd": 2.2760710999999962,
+    "sum_est_cost_usd": 11.949916199999835,
+    "mean_cost_usd": 0.0003209802707657594,
+    "count": 7091
+  },
+  "sqlite": {
+    "sum_cost_usd": 0.0,
+    "sum_est_cost_usd": 0.0,
+    "mean_cost_usd": 0.0,
+    "count": 8857
+  },
+  "repair": {
+    "sum_cost_usd": 0.2794688999999996,
+    "sum_est_cost_usd": 0.9658026000000005,
+    "mean_cost_usd": 0.0005272998113207547,
+    "count": 530
+  },
+  "sc_sample": {
+    "sum_cost_usd": 4.063158400000001,
+    "sum_est_cost_usd": 9.830373600000028,
+    "mean_cost_usd": 0.0008218362459546925,
+    "count": 4944
+  }
+}

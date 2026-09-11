@@ -1,0 +1,752 @@
+{
+  "pred_path": "outputs/test_raid_v2_values/predictions.jsonl",
+  "split": "test",
+  "scoring": "official",
+  "n": 2147,
+  "correct": 1876,
+  "fails": 271,
+  "ex": 0.8737773637633908,
+  "official_ex": {
+    "correct": 1876,
+    "fails": 271,
+    "rate": 0.8737773637633908
+  },
+  "strict_ex_legacy": {
+    "correct": 1790,
+    "fails": 357,
+    "rate": 0.8337
+  },
+  "column_order_only_excluded": 86,
+  "fail_kinds": [
+    [
+      "wrong_values_or_filter",
+      88
+    ],
+    [
+      "superset_rows",
+      84
+    ],
+    [
+      "subset_rows",
+      75
+    ],
+    [
+      "exec_error",
+      14
+    ],
+    [
+      "set_op_miss",
+      4
+    ],
+    [
+      "miss_intersect",
+      3
+    ],
+    [
+      "miss_not_in",
+      2
+    ],
+    [
+      "gold_exec_error",
+      1
+    ]
+  ],
+  "fail_by_db": [
+    [
+      "aan_1",
+      24
+    ],
+    [
+      "bakery_1",
+      24
+    ],
+    [
+      "cre_Doc_and_collections",
+      19
+    ],
+    [
+      "movie_2",
+      18
+    ],
+    [
+      "government_shift",
+      17
+    ],
+    [
+      "planet_1",
+      16
+    ],
+    [
+      "art_1",
+      15
+    ],
+    [
+      "address_1",
+      12
+    ],
+    [
+      "pilot_1",
+      12
+    ],
+    [
+      "e_commerce",
+      11
+    ],
+    [
+      "car_racing",
+      10
+    ],
+    [
+      "cre_Students_Information_Systems",
+      9
+    ],
+    [
+      "real_estate_rentals",
+      9
+    ],
+    [
+      "warehouse_1",
+      9
+    ],
+    [
+      "advertising_agencies",
+      9
+    ],
+    [
+      "conference",
+      8
+    ],
+    [
+      "boat_1",
+      7
+    ],
+    [
+      "institution_sports",
+      6
+    ],
+    [
+      "club_leader",
+      4
+    ],
+    [
+      "headphone_store",
+      3
+    ]
+  ],
+  "fail_by_class": [
+    [
+      "NON-NESTED",
+      113
+    ],
+    [
+      "NESTED",
+      97
+    ],
+    [
+      "EASY",
+      61
+    ]
+  ],
+  "pattern_tags": [
+    [
+      "extra_distinct",
+      28
+    ],
+    [
+      "gold_count_first",
+      12
+    ],
+    [
+      "bad_count_distinct",
+      9
+    ],
+    [
+      "wrong_bridge_gov",
+      9
+    ],
+    [
+      "miss_not_in_tag",
+      7
+    ],
+    [
+      "gold_key_first",
+      1
+    ]
+  ],
+  "fail_indices": [
+    41,
+    59,
+    66,
+    67,
+    71,
+    74,
+    75,
+    86,
+    87,
+    90,
+    101,
+    134,
+    135,
+    141,
+    151,
+    340,
+    363,
+    364,
+    365,
+    368,
+    370,
+    371,
+    372,
+    374,
+    380,
+    381,
+    382,
+    383,
+    387,
+    388,
+    390,
+    393,
+    394,
+    433,
+    434,
+    441,
+    442,
+    453,
+    454,
+    459,
+    460,
+    464,
+    467,
+    481,
+    554,
+    597,
+    603,
+    631,
+    647,
+    651,
+    654,
+    655,
+    671,
+    672,
+    697,
+    698,
+    702,
+    704,
+    707,
+    708,
+    709,
+    712,
+    714,
+    715,
+    716,
+    717,
+    718,
+    719,
+    726,
+    727,
+    729,
+    752,
+    760,
+    789,
+    790,
+    812,
+    813,
+    818,
+    820,
+    822,
+    823,
+    824,
+    833,
+    834,
+    838,
+    845,
+    860,
+    863,
+    875,
+    876,
+    894,
+    897,
+    926,
+    940,
+    952,
+    975,
+    976,
+    977,
+    978,
+    979,
+    980,
+    985,
+    986,
+    987,
+    988,
+    991,
+    992,
+    1005,
+    1006,
+    1009,
+    1010,
+    1019,
+    1020,
+    1025,
+    1026,
+    1043,
+    1044,
+    1047,
+    1048,
+    1059,
+    1062,
+    1074,
+    1079,
+    1086,
+    1090,
+    1095,
+    1096,
+    1129,
+    1130,
+    1138,
+    1139,
+    1140,
+    1155,
+    1157,
+    1158,
+    1159,
+    1160,
+    1165,
+    1172,
+    1183,
+    1199,
+    1203,
+    1234,
+    1235,
+    1241,
+    1244,
+    1245,
+    1248,
+    1249,
+    1276,
+    1277,
+    1290,
+    1291,
+    1305,
+    1312,
+    1313,
+    1318,
+    1319,
+    1320,
+    1386,
+    1387,
+    1400,
+    1410,
+    1424,
+    1425,
+    1434,
+    1435,
+    1446,
+    1447,
+    1465,
+    1484,
+    1486,
+    1487,
+    1489,
+    1507,
+    1508,
+    1514,
+    1515,
+    1516,
+    1517,
+    1518,
+    1530,
+    1533,
+    1543,
+    1546,
+    1549,
+    1550,
+    1556,
+    1563,
+    1567,
+    1573,
+    1574,
+    1583,
+    1584,
+    1587,
+    1588,
+    1601,
+    1602,
+    1614,
+    1619,
+    1620,
+    1622,
+    1625,
+    1632,
+    1635,
+    1636,
+    1651,
+    1652,
+    1659,
+    1671,
+    1675,
+    1676,
+    1703,
+    1704,
+    1709,
+    1715,
+    1727,
+    1728,
+    1731,
+    1732,
+    1752,
+    1796,
+    1797,
+    1798,
+    1803,
+    1804,
+    1821,
+    1822,
+    1837,
+    1838,
+    1839,
+    1840,
+    1841,
+    1842,
+    1843,
+    1844,
+    1849,
+    1850,
+    1851,
+    1852,
+    1853,
+    1854,
+    1868,
+    1869,
+    1871,
+    1877,
+    1878,
+    1881,
+    1882,
+    1884,
+    1885,
+    1886,
+    1893,
+    1894,
+    1900,
+    1916,
+    1929,
+    1930,
+    1968,
+    1978,
+    1981,
+    2011,
+    2073,
+    2079,
+    2080,
+    2113,
+    2127,
+    2134,
+    2141,
+    2142,
+    2146
+  ],
+  "samples": {
+    "miss_intersect": [
+      {
+        "index": 41,
+        "db_id": "e_commerce",
+        "class": "NON-NESTED",
+        "question": "What are the ids, first and last names of the customers who have ordered more than twice and have bought at least 3 items?",
+        "predicted_sql": "SELECT T1.customer_id, T1.customer_first_name, T1.customer_last_name FROM Customers AS T1 JOIN Orders AS T2 ON T1.customer_id = T2.customer_id JOIN Order_Items AS T3 ON T2.order_id = T3.order_id GROUP",
+        "gold_sql": "SELECT T1.customer_id ,  T1.customer_first_name ,  T1.customer_last_name FROM Customers AS T1 JOIN Orders AS T2 ON T1.customer_id  =  T2.customer_id GROUP BY T1.customer_id HAVING count(*)  >  2 INTER",
+        "detail": ""
+      },
+      {
+        "index": 1709,
+        "db_id": "warehouse_1",
+        "class": "NON-NESTED",
+        "question": "Find all contents present in warehouses located in Chicago and those located in New York.",
+        "predicted_sql": "SELECT DISTINCT T1.Contents FROM Boxes AS T1 JOIN Warehouses AS T2 ON T1.Warehouse = T2.Code WHERE T2.Location = 'Chicago' OR T2.Location = 'New York'",
+        "gold_sql": "SELECT T1.contents FROM boxes AS T1 JOIN warehouses AS T2 ON T1.warehouse  =  T2.code WHERE T2.location  =  'Chicago' INTERSECT SELECT T1.contents FROM boxes AS T1 JOIN warehouses AS T2 ON T1.warehous",
+        "detail": ""
+      },
+      {
+        "index": 1968,
+        "db_id": "video_game",
+        "class": "NON-NESTED",
+        "question": "What are the titles of games that are played by players from Oklahoma college or Auburn college?",
+        "predicted_sql": "SELECT DISTINCT T1.Title FROM game AS T1 JOIN game_player AS T2 ON T1.Game_ID = T2.Game_ID JOIN player AS T3 ON T2.Player_ID = T3.Player_ID WHERE T3.College = 'Oklahoma' OR T3.College = 'Auburn'",
+        "gold_sql": "SELECT T1.Title FROM game AS T1 JOIN game_player AS T2 ON T1.Game_ID  =  T2.Game_ID JOIN player AS T3 ON T2.Player_ID  =  T3.Player_ID WHERE T3.College  =  \"Oklahoma\" INTERSECT SELECT T1.Title FROM ga",
+        "detail": ""
+      }
+    ],
+    "wrong_values_or_filter": [
+      {
+        "index": 59,
+        "db_id": "e_commerce",
+        "class": "NON-NESTED",
+        "question": "How many products does each gender buy?",
+        "predicted_sql": "SELECT T1.gender_code, COUNT(DISTINCT T3.product_id) FROM Customers AS T1 JOIN Orders AS T2 ON T1.customer_id = T2.customer_id JOIN Order_Items AS T3 ON T2.order_id = T3.order_id GROUP BY T1.gender_co",
+        "gold_sql": "SELECT T1.gender_code ,  count(*) FROM Customers AS T1 JOIN Orders AS T2 ON T1.customer_id  =  T2.customer_id JOIN Order_items AS T3 ON T2.order_id  =  T3.order_id GROUP BY T1.gender_code",
+        "detail": ""
+      },
+      {
+        "index": 101,
+        "db_id": "e_commerce",
+        "class": "NON-NESTED",
+        "question": "How many products have been shipped?",
+        "predicted_sql": "SELECT count(DISTINCT T1.product_id) FROM Products AS T1 JOIN Order_Items AS T2 ON T1.product_id = T2.product_id JOIN Shipment_Items AS T3 ON T2.order_item_id = T3.order_item_id",
+        "gold_sql": "SELECT count(*) FROM Shipment_Items",
+        "detail": ""
+      },
+      {
+        "index": 340,
+        "db_id": "region_building",
+        "class": "NON-NESTED",
+        "question": "For each building, return the address of the building and the name of the region it belongs to.",
+        "predicted_sql": "SELECT T1.Address , T2.Name FROM building AS T1 JOIN region AS T2 ON T1.Region_ID = T2.Region_ID",
+        "gold_sql": "SELECT T1.Address ,  T2.Capital FROM building AS T1 JOIN region AS T2 ON T1.Region_ID  =  T2.Region_ID",
+        "detail": ""
+      },
+      {
+        "index": 365,
+        "db_id": "government_shift",
+        "class": "NESTED",
+        "question": "Find the details of the customer who has used services the most times.",
+        "predicted_sql": "SELECT T2.Customer_Details FROM Customer_Interactions AS T1 JOIN Customers AS T2 ON T1.Customer_ID = T2.Customer_ID GROUP BY T2.Customer_ID ORDER BY count(T1.Service_ID) DESC LIMIT 1",
+        "gold_sql": "SELECT t1.customer_details FROM customers AS t1 JOIN customers_and_services AS t2 ON t1.customer_id  =  t2.customer_id GROUP BY t1.customer_details ORDER BY count(*) DESC LIMIT 1",
+        "detail": ""
+      },
+      {
+        "index": 368,
+        "db_id": "government_shift",
+        "class": "NESTED",
+        "question": "Which customer has used the most types of services ? Give me the customer details .",
+        "predicted_sql": "SELECT T1.Customer_Details FROM Customers AS T1 JOIN Customer_Interactions AS T2 ON T1.Customer_ID = T2.Customer_ID GROUP BY T1.Customer_ID ORDER BY count(DISTINCT T2.Service_ID) DESC LIMIT 1",
+        "gold_sql": "select t1.customer_details from customers as t1 join customers_and_services as t2 on t1.customer_id  =  t2.customer_id group by t1.customer_details order by count(*) desc limit 1",
+        "detail": ""
+      }
+    ],
+    "superset_rows": [
+      {
+        "index": 66,
+        "db_id": "e_commerce",
+        "class": "NON-NESTED",
+        "question": "List the names of the products being shipped and the corresponding shipment date.",
+        "predicted_sql": "SELECT T1.product_name, T4.shipment_date FROM Products AS T1 JOIN Order_Items AS T2 ON T1.product_id = T2.product_id JOIN Orders AS T3 ON T2.order_id = T3.order_id JOIN Shipments AS T4 ON T3.order_id ",
+        "gold_sql": "SELECT T1.product_name ,  T4.shipment_date FROM Products AS T1 JOIN Order_items AS T2 ON T1.product_id  =  T2.product_id JOIN Shipment_Items AS T3 ON T2.order_item_id  =  T3.order_item_id JOIN Shipmen",
+        "detail": ""
+      },
+      {
+        "index": 134,
+        "db_id": "bbc_channels",
+        "class": "NESTED",
+        "question": "give me the name of channels that have both a director younger than 40 and a director older than 60.",
+        "predicted_sql": "SELECT T1.Name FROM channel AS T1 JOIN program AS T2 ON T1.Channel_ID = T2.Channel_ID JOIN director AS T3 ON T2.Director_ID = T3.Director_ID WHERE T3.Age < 40 INTERSECT SELECT T1.Name FROM channel AS ",
+        "gold_sql": "SELECT t1.name FROM channel AS t1 JOIN director_admin AS t2 ON t1.channel_id  =  t2.channel_id JOIN director AS t3 ON t2.director_id  =  t3.director_id WHERE t3.age  <  40 INTERSECT SELECT t1.name FRO",
+        "detail": ""
+      },
+      {
+        "index": 135,
+        "db_id": "bbc_channels",
+        "class": "NESTED",
+        "question": "Find the id and name of the channel that is not directed by Hank Baskett.",
+        "predicted_sql": "SELECT T1.Channel_ID, T1.Name FROM channel AS T1 EXCEPT SELECT T1.Channel_ID, T1.Name FROM channel AS T1 JOIN program AS T2 ON T1.Channel_ID = T2.Channel_ID JOIN director AS T3 ON T2.Director_ID = T3.",
+        "gold_sql": "SELECT t1.name ,  t1.channel_id FROM channel AS t1 JOIN director_admin AS t2 ON t1.channel_id  =  t2.channel_id JOIN director AS t3 ON t2.director_id  =  t3.director_id WHERE t3.name != \"Hank Baskett\"",
+        "detail": ""
+      },
+      {
+        "index": 141,
+        "db_id": "tv_shows",
+        "class": "NESTED",
+        "question": "What is the transmitter of the radio with the largest ERP_kW?",
+        "predicted_sql": "SELECT Transmitter FROM radio WHERE ERP_kW = (SELECT MAX(ERP_kW) FROM radio)",
+        "gold_sql": "SELECT Transmitter FROM radio ORDER BY ERP_kW DESC LIMIT 1",
+        "detail": ""
+      },
+      {
+        "index": 151,
+        "db_id": "vehicle_driver",
+        "class": "NESTED",
+        "question": "What is the model of the vehicle with maximum top speed whose power is higher than 6000?",
+        "predicted_sql": "SELECT Model FROM vehicle WHERE Power > 6000 AND Top_Speed = (SELECT MAX(Top_Speed) FROM vehicle WHERE Power > 6000)",
+        "gold_sql": "SELECT model FROM vehicle WHERE power  >  6000 ORDER BY top_speed DESC LIMIT 1",
+        "detail": ""
+      }
+    ],
+    "subset_rows": [
+      {
+        "index": 67,
+        "db_id": "e_commerce",
+        "class": "NON-NESTED",
+        "question": "What are the names of the products tht have been shipped, and on what days were they shipped?",
+        "predicted_sql": "SELECT DISTINCT T1.product_name, T4.shipment_date FROM Products AS T1 JOIN Order_Items AS T2 ON T1.product_id = T2.product_id JOIN Shipments AS T4 ON T2.order_id = T4.order_id JOIN Shipment_Items AS T",
+        "gold_sql": "SELECT T1.product_name ,  T4.shipment_date FROM Products AS T1 JOIN Order_items AS T2 ON T1.product_id  =  T2.product_id JOIN Shipment_Items AS T3 ON T2.order_item_id  =  T3.order_item_id JOIN Shipmen",
+        "detail": ""
+      },
+      {
+        "index": 71,
+        "db_id": "e_commerce",
+        "class": "NON-NESTED",
+        "question": "What are the names and colors of all products that have been shipped?",
+        "predicted_sql": "SELECT DISTINCT T1.product_name, T1.product_color FROM Products AS T1 JOIN Order_Items AS T2 ON T1.product_id = T2.product_id JOIN Shipment_Items AS T3 ON T2.order_item_id = T3.order_item_id",
+        "gold_sql": "SELECT T1.product_name ,  T1.product_color FROM Products AS T1 JOIN Order_items AS T2 ON T1.product_id  =  T2.product_id JOIN Shipment_Items AS T3 ON T2.order_item_id  =  T3.order_item_id JOIN Shipmen",
+        "detail": ""
+      },
+      {
+        "index": 74,
+        "db_id": "e_commerce",
+        "class": "NESTED",
+        "question": "What are invoices status of all the orders which have not been shipped?",
+        "predicted_sql": "SELECT T3.invoice_status_code FROM Orders AS T1 JOIN Shipments AS T2 ON T1.order_id = T2.order_id JOIN Invoices AS T3 ON T2.invoice_number = T3.invoice_number WHERE T1.order_id NOT IN ( SELECT order_i",
+        "gold_sql": "SELECT invoice_status_code FROM Invoices WHERE invoice_number NOT IN ( SELECT invoice_number FROM Shipments )",
+        "detail": ""
+      },
+      {
+        "index": 86,
+        "db_id": "e_commerce",
+        "class": "EASY",
+        "question": "What are the product sizes of the products whose name has the substring 'Dell'?",
+        "predicted_sql": "SELECT DISTINCT product_size FROM Products WHERE product_name LIKE '%Dell%'",
+        "gold_sql": "SELECT product_size FROM Products WHERE product_name LIKE '%Dell%'",
+        "detail": ""
+      },
+      {
+        "index": 87,
+        "db_id": "e_commerce",
+        "class": "EASY",
+        "question": "What are the sizes of all products whose name includes the word 'Dell'?",
+        "predicted_sql": "SELECT DISTINCT product_size FROM Products WHERE product_name LIKE '%Dell%'",
+        "gold_sql": "SELECT product_size FROM Products WHERE product_name LIKE '%Dell%'",
+        "detail": ""
+      }
+    ],
+    "miss_not_in": [
+      {
+        "index": 75,
+        "db_id": "e_commerce",
+        "class": "NON-NESTED",
+        "question": "What are the invoice statuses for all orderes that have not been shipped out yet?",
+        "predicted_sql": "SELECT T3.invoice_status_code FROM Orders AS T1 LEFT JOIN Shipments AS T2 ON T1.order_id = T2.order_id LEFT JOIN Invoices AS T3 ON T2.invoice_number = T3.invoice_number WHERE T2.shipment_id IS NULL",
+        "gold_sql": "SELECT invoice_status_code FROM Invoices WHERE invoice_number NOT IN ( SELECT invoice_number FROM Shipments )",
+        "detail": ""
+      },
+      {
+        "index": 464,
+        "db_id": "cre_Students_Information_Systems",
+        "class": "NESTED",
+        "question": "What is the biographical information of the students who got the most common result for their behaviour monitoring details ?",
+        "predicted_sql": "SELECT T1.bio_data FROM Students AS T1 JOIN Behaviour_Monitoring AS T2 ON T1.student_id = T2.student_id WHERE T2.behaviour_monitoring_details = (SELECT behaviour_monitoring_details FROM Behaviour_Moni",
+        "gold_sql": "select t1.bio_data from students as t1 join behaviour_monitoring as t2 on t1.student_id  =  t2.student_id where t2.behaviour_monitoring_details in ( select behaviour_monitoring_details from behaviour_",
+        "detail": ""
+      }
+    ],
+    "set_op_miss": [
+      {
+        "index": 714,
+        "db_id": "cre_Doc_and_collections",
+        "class": "NESTED",
+        "question": "For the document subset with the most number of different documents , what are the ids and names of the subset , as well as the number of documents ?",
+        "predicted_sql": "SELECT T1.Document_Subset_ID, T1.Document_Subset_Name, COUNT(DISTINCT T2.Document_Object_ID) FROM Document_Subsets AS T1 JOIN Document_Subset_Members AS T2 ON T1.Document_Subset_ID = T2.Document_Subse",
+        "gold_sql": "select t1.document_subset_id ,  t2.document_subset_name , count(distinct t1.document_object_id) from document_subset_members as t1 join document_subsets as t2 on t1.document_subset_id =  t2.document_s",
+        "detail": ""
+      },
+      {
+        "index": 1160,
+        "db_id": "pilot_1",
+        "class": "NESTED",
+        "question": "Return the names of the different planes, as well as the names of the oldest pilots who flew each.",
+        "predicted_sql": "SELECT T1.plane_name, T1.pilot_name FROM PilotSkills AS T1 JOIN (SELECT plane_name, MAX(age) AS max_age FROM PilotSkills GROUP BY plane_name) AS T2 ON T1.plane_name = T2.plane_name AND T1.age = T2.max",
+        "gold_sql": "SELECT pilot_name ,  plane_name ,  max(age) FROM pilotskills GROUP BY plane_name",
+        "detail": ""
+      },
+      {
+        "index": 1425,
+        "db_id": "real_estate_rentals",
+        "class": "NESTED",
+        "question": "Return the ids of users who have performed two or more searches, as well as their search sequence.",
+        "predicted_sql": "SELECT user_id, search_seq FROM User_Searches WHERE user_id IN ( SELECT user_id FROM User_Searches GROUP BY user_id HAVING COUNT(search_seq) >= 2 )",
+        "gold_sql": "SELECT search_seq ,  user_id FROM User_Searches GROUP BY user_id HAVING count(*) >= 2;",
+        "detail": ""
+      },
+      {
+        "index": 2146,
+        "db_id": "advertising_agencies",
+        "class": "NON-NESTED",
+        "question": "What are the start and end times of each meeting, as well as the corresponding client and staff details the attendees?",
+        "predicted_sql": "SELECT T1.start_date_time, T1.end_date_time, T2.client_id, T2.agency_id, T2.sic_code, T2.client_details, T4.staff_id, T4.agency_id, T4.staff_details FROM Meetings AS T1 JOIN Clients AS T2 ON T1.client",
+        "gold_sql": "SELECT T1.start_date_time ,  T1.end_date_time ,  T2.client_details ,  T4.staff_details FROM meetings AS T1 JOIN clients AS T2 ON T1.client_id  =  T2.client_id JOIN staff_in_meetings AS T3 ON T1.meetin",
+        "detail": ""
+      }
+    ],
+    "exec_error": [
+      {
+        "index": 1234,
+        "db_id": "art_1",
+        "class": "NON-NESTED",
+        "question": "What are the location and medium type of paintings that are created by the artist whose first name is Pablo?",
+        "predicted_sql": "SELECT T1.location, T1.medium FROM Paintings AS T1 JOIN Artists AS T2 ON T1.painterID = T2.artistID WHERE T2.fname = 'Pablo'",
+        "gold_sql": "SELECT T2.location ,   T2.medium FROM artists AS T1 JOIN paintings AS T2 ON T1.artistID  =  T2.painterID WHERE T1.fname  =  \"Pablo\"",
+        "detail": "'<' not supported between instances of 'NoneType' and 'str'"
+      },
+      {
+        "index": 1235,
+        "db_id": "art_1",
+        "class": "NON-NESTED",
+        "question": "In what locations and on what mediums are the paintings created by the artist with the first name Pablo?",
+        "predicted_sql": "SELECT T1.location, T1.medium FROM Paintings AS T1 JOIN Artists AS T2 ON T1.painterID = T2.artistID WHERE T2.fname = 'Pablo'",
+        "gold_sql": "SELECT T2.location ,   T2.medium FROM artists AS T1 JOIN paintings AS T2 ON T1.artistID  =  T2.painterID WHERE T1.fname  =  \"Pablo\"",
+        "detail": "'<' not supported between instances of 'NoneType' and 'str'"
+      },
+      {
+        "index": 1248,
+        "db_id": "art_1",
+        "class": "EASY",
+        "question": "What are the numbers of paintings created before 1900 in different places?",
+        "predicted_sql": "SELECT location, COUNT(*) FROM Paintings WHERE year < 1900 GROUP BY location",
+        "gold_sql": "SELECT count(*) ,  LOCATION FROM paintings WHERE YEAR  <  1900 GROUP BY LOCATION",
+        "detail": "'<' not supported between instances of 'str' and 'NoneType'"
+      },
+      {
+        "index": 1249,
+        "db_id": "art_1",
+        "class": "EASY",
+        "question": "How many paintings were created before 1900 in different locations?",
+        "predicted_sql": "SELECT location, COUNT(*) FROM Paintings WHERE year < 1900 GROUP BY location",
+        "gold_sql": "SELECT count(*) ,  LOCATION FROM paintings WHERE YEAR  <  1900 GROUP BY LOCATION",
+        "detail": "'<' not supported between instances of 'str' and 'NoneType'"
+      },
+      {
+        "index": 1276,
+        "db_id": "art_1",
+        "class": "EASY",
+        "question": "Which locations have paintings created before 1885 or after 1930?",
+        "predicted_sql": "SELECT DISTINCT location FROM Paintings WHERE year < 1885 OR year > 1930",
+        "gold_sql": "SELECT DISTINCT LOCATION FROM paintings WHERE YEAR  < 1885 OR YEAR  >  1930",
+        "detail": "'<' not supported between instances of 'NoneType' and 'str'"
+      }
+    ],
+    "gold_exec_error": [
+      {
+        "index": 1312,
+        "db_id": "art_1",
+        "class": "NESTED",
+        "question": "Find the locations that have paintings before 1885 and no work with medium on canvas?",
+        "predicted_sql": "SELECT location FROM Paintings WHERE year < 1885 EXCEPT SELECT location FROM Paintings WHERE mediumOn = 'canvas'",
+        "gold_sql": "SELECT DISTINCT LOCATION FROM paintings WHERE YEAR  <  1885 AND mediumOn != \"canvas\"",
+        "detail": ""
+      }
+    ]
+  },
+  "can_vs_cannot": {
+    "can": [
+      "normalize_select_star_order_by (SELECT * … ORDER BY col → SELECT col)",
+      "strip_count_from_frequency_sort (question-gated drop COUNT from SELECT)",
+      "DNS/API collapse abort + retries",
+      "incomplete-SQL / soft debug stops"
+    ],
+    "cannot_without_gold_or_breaks": [
+      "flip/remove reorder_select_for_group_by (offline net −41)",
+      "drop all DISTINCT (net −30)",
+      "COUNT(DISTINCT)→COUNT(*) always (net −16)",
+      "prefer baseline SQL when different (net −7)",
+      "auto NOT IN / bridge-table rewrite without zero-break proof"
+    ]
+  }
+}

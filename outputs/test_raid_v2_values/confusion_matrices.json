@@ -1,0 +1,70 @@
+{
+  "source": "outputs/test_raid_v2_values/predictions.jsonl",
+  "n_examples": 2147,
+  "official_ex": {
+    "correct": 1876,
+    "wrong": 271,
+    "rate": 0.8737773637633908
+  },
+  "ex_in_jsonl": {
+    "correct": 1790,
+    "wrong": 357
+  },
+  "difficulty_classifier": {
+    "description": "Predicted class (Flash) vs gold proxy hardness from gold SQL",
+    "classes": [
+      "EASY",
+      "NON-NESTED",
+      "NESTED"
+    ],
+    "matrix_rows_predicted_cols_gold": {
+      "EASY": {
+        "EASY": 891,
+        "NON-NESTED": 15,
+        "NESTED": 5
+      },
+      "NON-NESTED": {
+        "EASY": 86,
+        "NON-NESTED": 503,
+        "NESTED": 19
+      },
+      "NESTED": {
+        "EASY": 201,
+        "NON-NESTED": 193,
+        "NESTED": 234
+      }
+    },
+    "accuracy": 0.7583,
+    "accuracy_pct": 75.8,
+    "diagonal_correct": 1628
+  },
+  "ex_by_predicted_class_bag_metric": {
+    "EASY": {
+      "correct": 807,
+      "wrong": 104
+    },
+    "NON-NESTED": {
+      "correct": 475,
+      "wrong": 133
+    },
+    "NESTED": {
+      "correct": 508,
+      "wrong": 120
+    }
+  },
+  "ex_by_gold_hardness_bag_metric": {
+    "EASY": {
+      "correct": 1011,
+      "wrong": 167
+    },
+    "NON-NESTED": {
+      "correct": 564,
+      "wrong": 147
+    },
+    "NESTED": {
+      "correct": 215,
+      "wrong": 43
+    }
+  },
+  "mermaid_note": "Use matrix_rows_predicted_cols_gold for the 3x3 classifier confusion matrix"
+}

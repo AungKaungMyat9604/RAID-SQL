@@ -1,0 +1,46 @@
+# Secrets and local credentials — never commit
+.env
+.env.*
+!.env.example
+*.pem
+*.p12
+*credentials*.json
+*service-account*.json
+sa.json
+secrets/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+dist/
+build/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+env/
+
+# Embedding indexes / local DB caches (rebuild with scripts/build_index.py)
+.chroma/
+chroma_db/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+
+# Experimental run outputs (keep only the locked claim package tracked)
+outputs/*
+!outputs/README.md
+!outputs/test_raid_v2_values/
+!outputs/test_raid_v2_values/**
+
+# Optional large/noisy regenerable logs (keep claim summaries + predictions)
+# Uncomment the next line if GitHub push rejects size limits:
+# outputs/test_raid_v2_values/cost_ledger.jsonl

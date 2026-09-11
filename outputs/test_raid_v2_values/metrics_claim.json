@@ -1,0 +1,19 @@
+{
+  "folder": "outputs/test_raid_v2_values",
+  "official_ex": 0.8737773637633908,
+  "official_correct": 1876,
+  "n_examples": 2147,
+  "fair_deployable": true,
+  "system": "RAID-SQL v2 Flash + DB values (Gemini 2.5 Flash)",
+  "approx_total_cost_usd": 9.81,
+  "approx_cost_per_query_usd": 0.0046,
+  "din_sql_paper_official_ex": 0.853,
+  "beats_din_on_official_ex": true,
+  "token_summary": {
+    "sum_tokens_in": 24261908,
+    "sum_tokens_out": 1024543,
+    "mean_tokens_in_per_query": 11300.4,
+    "mean_tokens_out_per_query": 477.2,
+    "mean_llm_calls": 8.852352119236144
+  }
+}

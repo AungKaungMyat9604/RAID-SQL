@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use RAID-SQL, please cite this software and the accompanying dissertation / ICAIT paper."
+title: "RAID-SQL: Retrieval-Augmented Decomposed Text-to-SQL"
+authors:
+  - family-names: Myat
+    given-names: Aung Kaung
+type: software
+license: MIT
+version: "1.0.0"
+date-released: "2026-08-29"
+url: "https://github.com/YOUR_USERNAME/RAID-SQL"
+repository-code: "https://github.com/YOUR_USERNAME/RAID-SQL"
+abstract: >
+  RAID-SQL extends DIN-style Text-to-SQL with structure-aware retrieval,
+  database-value grounding, execution-guided repair, and self-consistency
+  on Gemini 2.5 Flash. Locked Spider-test official EX is 87.38% (1876/2147),
+  exceeding DIN-SQL's published 85.3%.
+keywords:
+  - Text-to-SQL
+  - Spider
+  - DIN-SQL
+  - retrieval-augmented generation
+  - Gemini

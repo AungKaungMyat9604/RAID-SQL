@@ -1,0 +1,157 @@
+{
+  "split": "test",
+  "model": "gemini-2.5-flash",
+  "n_examples": 2147,
+  "ex_correct": 1876,
+  "ex_total_scored": 2147,
+  "execution_accuracy": 0.8737773637633908,
+  "sum_cost_usd": 9.8144011,
+  "mean_cost_usd": 0.004571216162086633,
+  "mean_est_cost_usd": 0.015950910293432694,
+  "latency_ms": {
+    "mean": 24004.144878708958,
+    "p50": 23366.152495998904,
+    "p95": 53242.37983399507
+  },
+  "mean_latency_sec": 24.004144878708956,
+  "mean_llm_calls": 8.852352119236144,
+  "elapsed_wall_sec": 0.14890694618225098,
+  "vs_din_sql_paper": {
+    "paper_cost_per_query_usd": 0.5,
+    "paper_latency_sec": 60.0,
+    "cost_ratio_raid_over_din": 0.009142432324173265,
+    "latency_ratio_raid_over_din": 0.40006908131181596,
+    "cost_savings_usd_per_query": 0.4954287838379134,
+    "latency_savings_sec_per_query": 35.995855121291044
+  },
+  "latency_by_stage": {
+    "schema_link": {
+      "mean": 2577.0066377419403,
+      "p50": 2078.414832998533,
+      "p95": 6618.516832999376,
+      "count": 2147,
+      "sum_cost_usd": 0.9752328999999991,
+      "sum_tokens_in": 2389368,
+      "sum_tokens_out": 103369
+    },
+    "classify": {
+      "mean": 2751.4901142491904,
+      "p50": 2136.1415410028712,
+      "p95": 7596.306750001531,
+      "count": 2147,
+      "sum_cost_usd": 0.7848761000000007,
+      "sum_tokens_in": 1804987,
+      "sum_tokens_out": 97352
+    },
+    "retrieve": {
+      "mean": 1557.4532382329057,
+      "p50": 1543.5621455004593,
+      "p95": 1738.2963750023919,
+      "count": 2206,
+      "sum_cost_usd": 0.012764399999999997,
+      "sum_tokens_in": 127644,
+      "sum_tokens_out": 0
+    },
+    "generate": {
+      "mean": 2131.8355332119886,
+      "p50": 1578.9350410000225,
+      "p95": 6234.626459001447,
+      "count": 2147,
+      "sum_cost_usd": 1.4228293000000007,
+      "sum_tokens_in": 3916931,
+      "sum_tokens_out": 99100
+    },
+    "text_debug": {
+      "mean": 2543.208824920404,
+      "p50": 1933.7521669995112,
+      "p95": 7554.685583003447,
+      "count": 7091,
+      "sum_cost_usd": 2.2760710999999962,
+      "sum_tokens_in": 4531862,
+      "sum_tokens_out": 366605
+    },
+    "sqlite": {
+      "mean": 7.130854634848738,
+      "p50": 0.7944579992908984,
+      "p95": 2.21850000161794,
+      "count": 8857,
+      "sum_cost_usd": 0.0,
+      "sum_tokens_in": 0,
+      "sum_tokens_out": 0
+    },
+    "repair": {
+      "mean": 2609.6761167262625,
+      "p50": 1983.0316874977143,
+      "p95": 6332.507708000776,
+      "count": 530,
+      "sum_cost_usd": 0.2794688999999996,
+      "sum_tokens_in": 766688,
+      "sum_tokens_out": 19785
+    },
+    "sc_sample": {
+      "mean": 2549.28068281531,
+      "p50": 1929.6546665009373,
+      "p95": 7366.474208,
+      "count": 4944,
+      "sum_cost_usd": 4.063158400000001,
+      "sum_tokens_in": 10724428,
+      "sum_tokens_out": 338332
+    }
+  },
+  "cost_by_stage": {
+    "schema_link": {
+      "sum_cost_usd": 0.9752328999999991,
+      "sum_est_cost_usd": 3.7114047000000006,
+      "mean_cost_usd": 0.00045423050768514205,
+      "count": 2147
+    },
+    "classify": {
+      "sum_cost_usd": 0.7848761000000007,
+      "sum_est_cost_usd": 3.679931999999992,
+      "mean_cost_usd": 0.0003655687470889613,
+      "count": 2147
+    },
+    "retrieve": {
+      "sum_cost_usd": 0.012764399999999997,
+      "sum_est_cost_usd": 0.012764399999999997,
+      "mean_cost_usd": 5.786219401631913e-06,
+      "count": 2206
+    },
+    "generate": {
+      "sum_cost_usd": 1.4228293000000007,
+      "sum_est_cost_usd": 4.0964109,
+      "mean_cost_usd": 0.0006627057755006986,
+      "count": 2147
+    },
+    "text_debug": {
+      "sum_cost_usd": 2.2760710999999962,
+      "sum_est_cost_usd": 11.949916199999835,
+      "mean_cost_usd": 0.0003209802707657594,
+      "count": 7091
+    },
+    "sqlite": {
+      "sum_cost_usd": 0.0,
+      "sum_est_cost_usd": 0.0,
+      "mean_cost_usd": 0.0,
+      "count": 8857
+    },
+    "repair": {
+      "sum_cost_usd": 0.2794688999999996,
+      "sum_est_cost_usd": 0.9658026000000005,
+      "mean_cost_usd": 0.0005272998113207547,
+      "count": 530
+    },
+    "sc_sample": {
+      "sum_cost_usd": 4.063158400000001,
+      "sum_est_cost_usd": 9.830373600000028,
+      "mean_cost_usd": 0.0008218362459546925,
+      "count": 4944
+    }
+  },
+  "flags": {
+    "use_rag": true,
+    "use_execution_repair": true,
+    "use_self_consistency": true,
+    "include_db_values": true
+  }
+}
